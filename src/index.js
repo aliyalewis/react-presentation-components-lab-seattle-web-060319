@@ -5,9 +5,13 @@ import SimpleComponent from './components/SimpleComponent';
 import SimplerComponent from './components/SimplerComponent';
 
 ReactDOM.render(
+  handleClick = () => {
+    console.log('done');
+  }
+
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={this.state.handleClick} />
   </div>,
   document.getElementById('root')
 );
